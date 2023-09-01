@@ -7,6 +7,7 @@ const useMusicPlayer = () => {
     const togglePlay = () => {
       if(state.isPlaying){
         setState({...state, isPlaying: false})
+        state.audioPlayer.pause();
       } else {
         setState({...state, isPlaying: true})
         state.audioPlayer.play();

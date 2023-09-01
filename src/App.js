@@ -1,5 +1,3 @@
-import { faMusic } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import './App.css';
 import { PlayerControls } from './components/PlayerControls';
@@ -13,7 +11,7 @@ import music3 from './assets/music3.wav';
 function App() {
 
   const [state, setState] = useState({
-    audioPlayer: new Audio(),
+    audioPlayer: new Audio(music),
     tracks: [
       {
         name: "Itty bitty 8 bit",
