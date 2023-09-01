@@ -5,6 +5,9 @@ import './App.css';
 import { PlayerControls } from './components/PlayerControls';
 import TrackList from './components/TrackList';
 import { MusicContext } from './contexts/MusicContext';
+import music from './assets/music.wav';
+import music2 from './assets/music2.wav';
+import music3 from './assets/music3.wav';
 
 
 function App() {
@@ -13,12 +16,16 @@ function App() {
     audioPlayer: new Audio(),
     tracks: [
       {
-        name: "Track 1",
-        file: "",
+        name: "Itty bitty 8 bit",
+        file: music,
       },
       {
-        name: "Track 2",
-        file: "",
+        name: "Pixelland",
+        file: music2,
+      },
+      {
+        name: "Pinball spring",
+        file: music3,
       }
     ],
     currentTrackIndex: 0,
